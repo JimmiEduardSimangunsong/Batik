@@ -16,7 +16,7 @@ class CardTopBrand extends StatelessWidget {
         //menambahkan bayangan
         elevation: 5,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             SizedBox(
               height: 150,
@@ -32,11 +32,13 @@ class CardTopBrand extends StatelessWidget {
                       );
               }),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                title,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Text(
+                  title,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                ),
               ),
             )
           ],

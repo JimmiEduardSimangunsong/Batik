@@ -17,6 +17,8 @@ class _TopBrandState extends State<TopBrand> {
         backgroundColor: const Color.fromRGBO(210, 180, 140, 5),
       ),
       body: GridView.count(
+        childAspectRatio: MediaQuery.of(context).size.width /
+            (MediaQuery.of(context).size.height / 2),
         physics: const BouncingScrollPhysics(),
         //widget yang akan ditampilkan dalam 1 baris adalah 2
         crossAxisCount: 2,
